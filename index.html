@@ -1,183 +1,189 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Arunjunan</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <!-- MENU ENCABEZADO -->
-    <div class="contenedor-header">
+    <!--Header-->
+    <div class="content-header">
         <header>
             <div class="logo">
-                <a href="#">Nick</a>
+            <a href="#">Arunjunan</a>
             </div>
             <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
+            <ul>
+                <li><a href="#home" onclick="select()">HOME</a></li>
+                <li><a href="#about" onclick="select()">ABOUT</a></li>
+                <li><a href="#skills" onclick="select()">SKIILS</a></li>
+                <li><a href="#services" onclick="select()">SERVICES</a></li>
+                <li><a href="#contact" onclick="select()">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="nav-responsive" onclick="showHiddenMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
     </div>
 
-    <!-- SECCION INICIO -->
-    <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/hero.png" alt="">
-            </div>
-            <h1>NICK PEREZ</h1>
-            <h2>Ingeniero de Software - Experto UI/UX</h2>
-            <div class="redes">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-skype"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-solid fa-rss"></i></a>
-            </div>
-        </div>
-    </section>
+    <!--Home-->
 
-    <!-- SECCION SOBRE MI -->
-    <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Nick Perez.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+        <section id="home" class="home">
+            <div class="content-banner">
+                <div class="content-img">
+                    <img src="img/hero.png" alt="">
+                </div>
+                <h1>ARUNJUNAN</h1>
+                <h2>Beginner - Front-End & Developer</h2>
+                <div class="networks">
+                    <a href="https://m.facebook.com/arunjunan.venkatesan"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/Arunjunan07"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com/_.astaroth._07?igshid=NGExMmI2YTkyZg=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/me?trk=p_mwlite_feed_updates-secondary_nav"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Arunjunan07"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </section>
 
-            <div class="fila">
-                <!-- datos personales -->
+    <!--About-->
+
+    <section id="about" class="about">
+        <div class="about container">
+        <div class="content-section">
+            <div class="service-top">
+                <h1 class="section-title">About <span>Me</span></h1>
+             </div>
+            <p><span>Hi, I'm Arunjunan Venkatesan.</span> Welcome to my portfolio website! I am a skilled graphic designer and web developer, dedicated to creating visually stunning and user-friendly experiences.
+                 I have worked with diverse clients, crafting unique brand identities, designing captivating marketing materials, and developing responsive websites. I prioritize effective communication and collaboration with clients to ensure their vision is realized. 
+                 Explore my portfolio to see my versatile designs, including sleek websites, eye-catching logos, and branding materials. I'm eager to take on new challenges and collaborate with innovative individuals and companies. 
+                 Let's create something extraordinary together!</p>
+
+            <div class="row">
+            
                 <div class="col">
-                    <h3>Datos Personales</h3>
+                    <h3>Personal Data</h3>
                     <ul>
                         <li>
-                            <strong>Cumpleaños</strong>
-                            15-01-1980
+                            <strong>Birthday</strong>
+                            20-11-2003
                         </li>
                         <li>
-                            <strong>Teléfono</strong>
-                            2555 5454545
+                            <strong>Mobile No.</strong>
+                            (91+) 9943997600
                         </li>
                         <li>
                             <strong>Email</strong>
-                            cw@example.com
+                            arunjunanvenkatesan@gmail.com
                         </li>
                         <li>
                             <strong>Website</strong>
-                            www.example.com
+                            www.arunjunanvenkatesan.rf.gd
                         </li>
                         <li>
-                            <strong>Dirección</strong>
-                            123 San Luis, Argentina
+                            <strong>Address</strong>
+                            Villapuram, Madurai, India
                         </li>
                         <li>
-                            <strong>Cargo</strong>
-                            <span>FREELANCE</span>
+                            <strong>Post</strong>
+                            <span>STUDENT</span>
                         </li>
                     </ul>
                 </div>
-
-                <!-- intereses -->
+                <br><br>
+        <!-- interest -->
                 <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
+                    <h3>Interests</h3>
+                    <div class="content-interest">
+                        <div class="interest">
                             <i class="fa-solid fa-gamepad"></i>
-                            <span>JUEGOS</span>
+                            <span>GAMES</span>
                         </div>
-                        <div class="interes">
+                        <div class="interest">
                             <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
+                            <span>MUSIC</span>
                         </div>
-                        <div class="interes">
+                        <div class="interest">
                             <i class="fa-solid fa-plane"></i>
-                            <span>VIAJAR</span>
+                            <span>TRAVEL</span>
                         </div>
-                        <div class="interes">
-                            <i class="fa-brands fa-apple"></i>
-                            <span>MAC OS</span>
+                        <div class="interest">
+                            <i class="fa-brands fa-android"></i>
+                            <span>ANDROID</span>
                         </div>
-                        <div class="interes">
+                        <div class="interest">
                             <i class="fa-solid fa-person-hiking"></i>
-                            <span>DEPORTE</span>
+                            <span>SPORT</span>
                         </div>
-                        <div class="interes">
+                        <div class="interest">
                             <i class="fa-solid fa-book"></i>
-                            <span>LIBROS</span>
+                            <span>BOOKS</span>
                         </div>
-                        <div class="interes">
+                        <div class="interest">
                             <i class="fa-solid fa-car"></i>
-                            <span>AUTOS</span>
+                            <span>CARS</span>
                         </div>
-                        <div class="interes">
+                        <div class="interest">
                             <i class="fa-solid fa-camera"></i>
-                            <span>FOTOS</span>
+                            <span>PHOTOS</span>
                         </div>
                         
                     </div>
                 </div>
             </div>
-            <button>
-                Descargar CV <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </button>
-        </div>
-    </section>
+            </div>
+            </div>
+        </section>
 
-    <!-- SECCION SKILLS -->
+ <!-- SKILLS -->
+
     <section class="skills" id="skills">
-        <div class="contenido-seccion">
-            <h2>Skills</h2>
-            <div class="fila">
+        <div class="skills container">
+        <div class="content-section">
+            <h1 class="section-title">Sk<span>i</span>lls</h1>
+            <div class="row">
                 <!-- Technical Skill -->
                 <div class="col">
                     <h3>Technical Skills</h3>
                     <div class="skill">
-                        <span>Javascript</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
                         <span>HTML & CSS</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
+                        <div class="bar-skill">
+                            <div class="progress">
                                 <span>89%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Photoshop</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>95%</span>
+                        <span>Javascript</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>45%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Wordpress</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>81%</span>
+                        <span>Java</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>80%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Drupa</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
+                        <span>Python</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Android</span>
+                        <div class="bar-skill">
+                            <div class="progress">
                                 <span>55%</span>
                             </div>
                         </div>
@@ -187,41 +193,41 @@
                 <div class="col">
                     <h3>Professional Skills</h3>
                     <div class="skill">
-                        <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
+                        <span>Communication</span>
+                        <div class="bar-skill">
+                            <div class="progress">
                                 <span>80%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
+                        <span>Teamwork</span>
+                        <div class="bar-skill">
+                            <div class="progress">
                                 <span>70%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
+                        <span>Creativity</span>
+                        <div class="bar-skill">
+                            <div class="progress">
                                 <span>99%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Dedicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
+                        <span>Dedication</span>
+                        <div class="bar-skill">
+                            <div class="progress">
                                 <span>65%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Proyect Management</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
+                        <span>Project Management</span>
+                        <div class="bar-skill">
+                            <div class="progress">
                                 <span>94%</span>
                             </div>
                         </div>
@@ -229,162 +235,75 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- SECCION CURRICULUM -->
-    <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educación</h3>
-                    <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
-                    <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
-    <!-- SECCION PORTFOLIO -->
-    <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
-            <h2>PORTFOLIO</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <img src="img/p1.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p2.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p3.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p4.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p5.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p6.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!--Services-->
 
-    <!-- SECCION CONTACTO -->
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- Formulario -->
+    <section id="services">
+        <div class="services container">
+          <div class="service-top">
+            <h1 class="section-title">Serv<span>i</span>ces</h1>
+            <p>As a student, some common services you can provide include tutoring in specific subjects, essay writing and editing, language translation, web design and development, social media management, data entry, virtual assistance,
+                 photography and videography, resume writing and career advice and editing. 
+                 These services allow you to utilize your skills and provide valuable assistance to others while managing your studies.</p>
+          </div>
+          <div class="service-bottom">
+            <div class="service-item">
+              <div class="icon"><img src="https://img.icons8.com/?size=1x&id=111134&format=png" /></div>
+              <h2>Web Design</h2>
+              <p> Creating visually appealing and user-friendly websites using various platforms and technologies.</p>
+            </div>
+            <div class="service-item">
+              <div class="icon"><img src="https://img.icons8.com/?size=1x&id=110566&format=png" /></div>
+              <h2>Photography</h2>
+              <p>Offering photography or videography services for events, portraits, or product shoots.</p>
+            </div>
+            <div class="service-item">
+              <div class="icon"><img src="https://img.icons8.com/?size=1x&id=113848&format=png" /></div>
+              <h2>Data Entry</h2>
+              <p>Assisting with data entry tasks, organizing information, or managing databases.</p>
+            </div>
+        
+          </div>
+        </div>
+      </section>
+
+      <!--Contact-->
+
+    <section id="contact" class="contact">
+        <div class="contact container">
+        <div class="content-section">
+            <h1 class="section-title">Con<span>t</span>act</h1>
+            <div class="row">
+        
                 <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="Phone Number">
+                    <input type="text" placeholder="Email Address">
+                    <input type="text" placeholder="Description">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
                     <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        Send Message  <i class="fa-solid fa-paper-plane"></i>
                         <span class="overlay"></span>
                     </button>
                 </div>
-                <!-- Mapa -->
+                <!-- Map -->
                 <div class="col">
-                    <img src="img/ubicacion.png" alt="">
+                    <img src="img/location.png" alt="">
                     <div class="info">
                         <ul>
                             <li>
                                 <i class="fa-solid fa-location-dot"></i>
-                                Nicaragua 159, San Rafael Mza
+                                Villapuram , Madurai 
                             </li>
                             <li>
                                 <i class="fa-solid fa-mobile-screen"></i>
-                                Llamanos: 2384 - 4343443 
+                                Call us : (91+) 9943997600
                             </li>
                             <li>
                                 <i class="fa-solid fa-envelope"></i>
-                                Email: cw@example.com
+                                Email: arunjunanvenkatesan@gmail.com
                             </li>
                         </ul>
                     </div>
@@ -393,20 +312,30 @@
         </div>
     </section>
 
-    <!-- footer -->
-    <footer>
-        <a href="#inicio" class="arriba">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
-        <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-skype"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-solid fa-rss"></i></a>
-        </div>
-    </footer>
+  <!-- Footer -->
+
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1>Arunjunan <span>Venkatesan </span></h1>
+      </div>
+      <a href="#home" class="above">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="networks">
+        <a href="https://m.facebook.com/arunjunan.venkatesan"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com/Arunjunan07"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://instagram.com/_.astaroth._07?igshid=NGExMmI2YTkyZg=="><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/me?trk=p_mwlite_feed_updates-secondary_nav"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/Arunjunan07"><i class="fa-brands fa-github"></i></a>
+    </div>
+      <p>Copyright © 2023 Arunjunan. All rights reserved</p>
+    </div>
+  </section>
+
+  <!--Javascript-->
 
     <script src="script.js"></script>
+
 </body>
 </html>

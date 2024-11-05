@@ -1,6 +1,6 @@
 let menuVisible = false;
-//Función que oculta o muestra el menu
-function mostrarOcultarMenu(){
+
+function showHiddenMenu(){
     if(menuVisible){
         document.getElementById("nav").classList ="";
         menuVisible = false;
@@ -10,32 +10,32 @@ function mostrarOcultarMenu(){
     }
 }
 
-function seleccionar(){
-    //oculto el menu una vez que selecciono una opcion
+function select(){
     document.getElementById("nav").classList = "";
     menuVisible = false;
 }
-//Funcion que aplica las animaciones de las habilidades
-function efectoHabilidades(){
+
+function skilleffort(){
     var skills = document.getElementById("skills");
-    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if(distancia_skills >= 300){
-        let habilidades = document.getElementsByClassName("progreso");
-        habilidades[0].classList.add("javascript");
-        habilidades[1].classList.add("htmlcss");
-        habilidades[2].classList.add("photoshop");
-        habilidades[3].classList.add("wordpress");
-        habilidades[4].classList.add("drupal");
-        habilidades[5].classList.add("comunicacion");
-        habilidades[6].classList.add("trabajo");
-        habilidades[7].classList.add("creatividad");
-        habilidades[8].classList.add("dedicacion");
-        habilidades[9].classList.add("proyect");
+    var distance_skills = window.innerHeight - skills.getBoundingClientRect().top;
+    if(distance_skills >= 300){
+        let skills = document.getElementsByClassName("progress");
+        skills[0].classList.add("htmlcss");
+        skills[1].classList.add("javascript");
+        skills[2].classList.add("java");
+        skills[3].classList.add("python");
+        skills[4].classList.add("android");
+        skills[5].classList.add("comunication");
+        skills[6].classList.add("team");
+        skills[7].classList.add("creativity");
+        skills[8].classList.add("dedication");
+        skills[9].classList.add("project");
     }
 }
 
 
-//detecto el scrolling para aplicar la animacion de la barra de habilidades
 window.onscroll = function(){
-    efectoHabilidades();
+    skilleffort();
 } 
+
+
